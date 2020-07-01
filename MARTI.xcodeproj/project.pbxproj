@@ -29,6 +29,17 @@
 		6738C53C24ABB86100B44AEE /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6738C53A24ABB86100B44AEE /* SearchTableViewCell.swift */; };
 		6738C53D24ABB86100B44AEE /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6738C53B24ABB86100B44AEE /* SearchTableViewCell.xib */; };
 		6738C55F24ABCEE800B44AEE /* Pods_MARTI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9ABD0B0CD50DF376DEB0062 /* Pods_MARTI.framework */; };
+		674B5A5424AC73C200F1E4F9 /* PlaceDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5324AC73C200F1E4F9 /* PlaceDetailBuilder.swift */; };
+		674B5A5624AC73E300F1E4F9 /* PlaceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5524AC73E300F1E4F9 /* PlaceDetailViewController.swift */; };
+		674B5A5824AC73F800F1E4F9 /* PlaceDetailContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5724AC73F800F1E4F9 /* PlaceDetailContracts.swift */; };
+		674B5A5A24AC740B00F1E4F9 /* PlaceDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5924AC740B00F1E4F9 /* PlaceDetailPresenter.swift */; };
+		674B5A5C24AC750200F1E4F9 /* PlaceDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674B5A5B24AC750200F1E4F9 /* PlaceDetail.storyboard */; };
+		674B5A5E24AC78D200F1E4F9 /* MapBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5D24AC78D200F1E4F9 /* MapBuilder.swift */; };
+		674B5A6024AC78E900F1E4F9 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A5F24AC78E900F1E4F9 /* MapViewController.swift */; };
+		674B5A6224AC78FC00F1E4F9 /* MapContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A6124AC78FB00F1E4F9 /* MapContracts.swift */; };
+		674B5A6424AC790700F1E4F9 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A6324AC790700F1E4F9 /* MapPresenter.swift */; };
+		674B5A6624AC792300F1E4F9 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A6524AC792300F1E4F9 /* MapRouter.swift */; };
+		674B5A6A24AC794B00F1E4F9 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674B5A6924AC794B00F1E4F9 /* Map.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +67,17 @@
 		6738C53724ABABF300B44AEE /* PlaceList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaceList.storyboard; sourceTree = "<group>"; };
 		6738C53A24ABB86100B44AEE /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		6738C53B24ABB86100B44AEE /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		674B5A5324AC73C200F1E4F9 /* PlaceDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailBuilder.swift; sourceTree = "<group>"; };
+		674B5A5524AC73E300F1E4F9 /* PlaceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailViewController.swift; sourceTree = "<group>"; };
+		674B5A5724AC73F800F1E4F9 /* PlaceDetailContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailContracts.swift; sourceTree = "<group>"; };
+		674B5A5924AC740B00F1E4F9 /* PlaceDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailPresenter.swift; sourceTree = "<group>"; };
+		674B5A5B24AC750200F1E4F9 /* PlaceDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PlaceDetail.storyboard; sourceTree = "<group>"; };
+		674B5A5D24AC78D200F1E4F9 /* MapBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBuilder.swift; sourceTree = "<group>"; };
+		674B5A5F24AC78E900F1E4F9 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		674B5A6124AC78FB00F1E4F9 /* MapContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapContracts.swift; sourceTree = "<group>"; };
+		674B5A6324AC790700F1E4F9 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
+		674B5A6524AC792300F1E4F9 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
+		674B5A6924AC794B00F1E4F9 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
 		862C1C53E3CF65EF2BDFB9FA /* Pods-MARTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTI.release.xcconfig"; path = "Target Support Files/Pods-MARTI/Pods-MARTI.release.xcconfig"; sourceTree = "<group>"; };
 		D9ABD0B0CD50DF376DEB0062 /* Pods_MARTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -159,6 +181,12 @@
 		67301DD324AB485E0059E606 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				674B5A5D24AC78D200F1E4F9 /* MapBuilder.swift */,
+				674B5A5F24AC78E900F1E4F9 /* MapViewController.swift */,
+				674B5A6124AC78FB00F1E4F9 /* MapContracts.swift */,
+				674B5A6324AC790700F1E4F9 /* MapPresenter.swift */,
+				674B5A6524AC792300F1E4F9 /* MapRouter.swift */,
+				674B5A6924AC794B00F1E4F9 /* Map.storyboard */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -166,6 +194,11 @@
 		67301DD424AB48670059E606 /* PlaceDetail */ = {
 			isa = PBXGroup;
 			children = (
+				674B5A5324AC73C200F1E4F9 /* PlaceDetailBuilder.swift */,
+				674B5A5524AC73E300F1E4F9 /* PlaceDetailViewController.swift */,
+				674B5A5724AC73F800F1E4F9 /* PlaceDetailContracts.swift */,
+				674B5A5924AC740B00F1E4F9 /* PlaceDetailPresenter.swift */,
+				674B5A5B24AC750200F1E4F9 /* PlaceDetail.storyboard */,
 			);
 			path = PlaceDetail;
 			sourceTree = "<group>";
@@ -212,6 +245,7 @@
 				67301DB224AB45730059E606 /* Frameworks */,
 				67301DB324AB45730059E606 /* Resources */,
 				30C16969AEFA4AB53237F447 /* [CP] Embed Pods Frameworks */,
+				3522015A0E6995208471D36C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,9 +295,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6738C53824ABABF300B44AEE /* PlaceList.storyboard in Resources */,
+				674B5A5C24AC750200F1E4F9 /* PlaceDetail.storyboard in Resources */,
 				67301DC524AB45740059E606 /* LaunchScreen.storyboard in Resources */,
 				67301DC224AB45740059E606 /* Assets.xcassets in Resources */,
 				6738C53D24ABB86100B44AEE /* SearchTableViewCell.xib in Resources */,
+				674B5A6A24AC794B00F1E4F9 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +321,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3522015A0E6995208471D36C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E859E89112F7F6CB35FDAB9F /* [CP] Check Pods Manifest.lock */ = {
@@ -318,20 +371,29 @@
 			files = (
 				6738C53424AB6FEC00B44AEE /* Geometry.swift in Sources */,
 				67301DE124AB49460059E606 /* PlaceListContracts.swift in Sources */,
+				674B5A5624AC73E300F1E4F9 /* PlaceDetailViewController.swift in Sources */,
 				67301DDC24AB48D20059E606 /* PlaceListPresenter.swift in Sources */,
 				6738C53624ABAAA100B44AEE /* Location.swift in Sources */,
 				67301DE524AB57DE0059E606 /* Place.swift in Sources */,
 				67301DCE24AB47BD0059E606 /* AppContainer.swift in Sources */,
+				674B5A6424AC790700F1E4F9 /* MapPresenter.swift in Sources */,
 				67301DEE24AB61700059E606 /* Search.swift in Sources */,
 				67301DEC24AB60460059E606 /* Constants.swift in Sources */,
+				674B5A6024AC78E900F1E4F9 /* MapViewController.swift in Sources */,
+				674B5A5424AC73C200F1E4F9 /* PlaceDetailBuilder.swift in Sources */,
+				674B5A5E24AC78D200F1E4F9 /* MapBuilder.swift in Sources */,
+				674B5A6624AC792300F1E4F9 /* MapRouter.swift in Sources */,
+				674B5A6224AC78FC00F1E4F9 /* MapContracts.swift in Sources */,
 				67301DDA24AB48C50059E606 /* PlaceListRouter.swift in Sources */,
 				6738C53C24ABB86100B44AEE /* SearchTableViewCell.swift in Sources */,
 				67301DB924AB45730059E606 /* AppDelegate.swift in Sources */,
 				67301DEA24AB60130059E606 /* APIRouter.swift in Sources */,
+				674B5A5A24AC740B00F1E4F9 /* PlaceDetailPresenter.swift in Sources */,
 				67301DD024AB47C80059E606 /* AppRouter.swift in Sources */,
 				67301DDF24AB48FD0059E606 /* PlaceListViewController.swift in Sources */,
 				67301DE824AB5EEA0059E606 /* APIClient.swift in Sources */,
 				67301DD824AB48B40059E606 /* PlaceListInteractor.swift in Sources */,
+				674B5A5824AC73F800F1E4F9 /* PlaceDetailContracts.swift in Sources */,
 				67301DD624AB489F0059E606 /* PlaceListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

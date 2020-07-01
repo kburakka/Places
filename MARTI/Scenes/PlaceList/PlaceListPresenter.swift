@@ -24,10 +24,6 @@ final class PlaceListPresenter: PlaceListPresenterProtocol{
          self.interactor.delegate = self
     }
         
-//    func load() {
-//        view.handleOutput(.updateTitle("Places"))
-////        interactor.load()
-//    }
     
     func searchPlace(searchText: String) {
         interactor.searchPlace(searchText: searchText)
@@ -46,7 +42,7 @@ extension PlaceListPresenter: PlaceListInteractorDelegate{
         case .showPlaceList(let places):
             view.handleOutput(.showPlaceList(places))
         case .showPlaceDetail(let place):
-            router.navigate(to: .detail(place))                
+            router.navigate(to: .showOnMap(place))                
         }
     }
 }

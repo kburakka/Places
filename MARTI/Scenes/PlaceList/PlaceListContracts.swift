@@ -47,7 +47,7 @@ protocol PlaceListViewProtocol: class {
 
 // MARK: - Router
 enum PlaceListRoute {
-    case detail(Place)
+    case showOnMap(Place)
 }
 
 protocol PlaceListRouterProtocol: class {

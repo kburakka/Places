@@ -18,9 +18,9 @@ final class PlaceListRouter : PlaceListRouterProtocol{
     
     func navigate(to route: PlaceListRoute) {
         switch route {
-        case .detail(let place):
-            print("detail")
-            // To do
+        case .showOnMap(let place):
+            let detailView = MapBuilder.make(with: place)
+            view.show(detailView, sender: nil)
         }
     }
 }

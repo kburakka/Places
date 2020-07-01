@@ -7,5 +7,7 @@ target 'MARTI' do
 
   # Pods for MARTI
 pod 'Alamofire', '~> 5.2'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
 
 end

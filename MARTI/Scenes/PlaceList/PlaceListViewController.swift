@@ -24,7 +24,6 @@ class PlaceListViewController: UIViewController, PlaceListViewProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        presenter.load()
     }
     
     func handleOutput(_ output: PlaceListPresenterOutput) {
@@ -33,7 +32,6 @@ class PlaceListViewController: UIViewController, PlaceListViewProtocol {
             self.title = title
         case .setLoading(let isLoading):
             print(isLoading)
-//            UIApplication.shared.isNetworkActivityIndicatorVisible = isLoading
         case .showPlaceList(let search):
             if let results = search.results{
                 places = results
