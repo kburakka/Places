@@ -19,6 +19,6 @@ final class PlaceDetailPresenter: PlaceDetailPresenterProtocol {
     }
     
     func load() {
-        view.update(place)
+        view.setDetail(place)
     }
 }

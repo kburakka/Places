@@ -13,5 +13,5 @@ protocol PlaceDetailPresenterProtocol {
 }
 
 protocol PlaceDetailViewProtocol: class {
-    func update(_ presentation: Place)
+    func setDetail(_ place: Place)
 }

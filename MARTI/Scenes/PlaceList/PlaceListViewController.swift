@@ -18,30 +18,32 @@ class PlaceListViewController: UIViewController, PlaceListViewProtocol {
 
     var searchText = ""{
         didSet{
-            presenter.searchPlace(searchText: searchText)
+            guard let escapedString = searchText.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) else {return}
+            presenter.searchPlace(searchText: escapedString)
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
+        self.title = "SEARCH PLACE"
     }
     
     func handleOutput(_ output: PlaceListPresenterOutput) {
         switch output {
-        case .updateTitle(let title):
-            self.title = title
         case .setLoading(let isLoading):
-            print(isLoading)
-        case .showPlaceList(let search):
-            if let results = search.results{
-                places = results
-                print(search)
+            if isLoading{
+                LoadingView.init(view: view).startAnimation()
             }else{
-                places = []
+                LoadingView.init(view: view).stopAnimation()
             }
+        case .showPlaceList(let search):
+            places = search.results ?? []
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
+        case .showError(let error):
+            self.showAlert(title: "Error", message: error.localizedDescription)
         }
     }
 }
@@ -62,6 +64,10 @@ extension PlaceListViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
         presenter.selectPlace(at: indexPath.row)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 88.0
     }
 }
 

@@ -8,18 +8,21 @@
 
 import Foundation
 
-final class Geometry: NSObject,Decodable {
+public struct Geometry: Decodable, Equatable {
     
-    let location: Location?
+    public let location: Location?
 
-    
-    init(location: Location) {
-        self.location = location
-        super.init()
+    public enum CodingKeys: String, CodingKey {
+                case location
     }
-    
-    override func isEqual(_ object: Any?) -> Bool {
-        guard let other = object as? Geometry else { return false }
-        return self.location == other.location
-    }
+
+//    init(location: Location) {
+//        self.location = location
+//        super.init()
+//    }
+//    
+//    override func isEqual(_ object: Any?) -> Bool {
+//        guard let other = object as? Geometry else { return false }
+//        return self.location == other.location
+//    }
 }

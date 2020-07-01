@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.2.1)
+  - Alamofire (4.9.1)
   - GoogleMaps (3.9.0):
     - GoogleMaps/Maps (= 3.9.0)
   - GoogleMaps/Base (3.9.0)
@@ -7,23 +7,41 @@ PODS:
     - GoogleMaps/Base
   - GooglePlaces (3.9.0):
     - GoogleMaps/Base (= 3.9.0)
+  - PromiseKit (6.13.1):
+    - PromiseKit/CorePromise (= 6.13.1)
+    - PromiseKit/Foundation (= 6.13.1)
+    - PromiseKit/UIKit (= 6.13.1)
+  - PromiseKit/CorePromise (6.13.1)
+  - PromiseKit/Foundation (6.13.1):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.13.1):
+    - PromiseKit/CorePromise
+  - SDWebImage (5.8.2):
+    - SDWebImage/Core (= 5.8.2)
+  - SDWebImage/Core (5.8.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
+  - Alamofire (~> 4.9.1)
   - GoogleMaps
   - GooglePlaces
+  - PromiseKit (~> 6.8)
+  - SDWebImage
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - GoogleMaps
     - GooglePlaces
+    - PromiseKit
+    - SDWebImage
 
 SPEC CHECKSUMS:
-  Alamofire: e911732990610fe89af59ac0077f923d72dc3dfd
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   GoogleMaps: 4b5346bddfe6911bb89155d43c903020170523ac
   GooglePlaces: 1634d019549b969d40fe0ccb0b9513055adebe01
+  PromiseKit: 28fda91c973cc377875d8c0ea4f973013c05b6db
+  SDWebImage: f923a89d7344af399ba77b87a523ae747408207a
 
-PODFILE CHECKSUM: e518950037a9afe475c6b64b5ca8e43f3954dd1b
+PODFILE CHECKSUM: 86729b865ace4fe778e8d0e919ed3235df4fd507
 
 COCOAPODS: 1.9.1

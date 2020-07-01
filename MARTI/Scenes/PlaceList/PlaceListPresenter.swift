@@ -43,6 +43,8 @@ extension PlaceListPresenter: PlaceListInteractorDelegate{
             view.handleOutput(.showPlaceList(places))
         case .showPlaceDetail(let place):
             router.navigate(to: .showOnMap(place))                
+        case .showError(let error):
+            view.handleOutput(.showError(error))
         }
     }
 }

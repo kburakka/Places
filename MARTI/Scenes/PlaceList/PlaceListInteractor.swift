@@ -9,7 +9,7 @@
 import Foundation
 
 final class PlaceListInteractor : PlaceListInteractorProtocol{
-
+    
     var delegate: PlaceListInteractorDelegate?
     private var places: [Place] = []
     private let service: APIClientProtocol
@@ -22,7 +22,6 @@ final class PlaceListInteractor : PlaceListInteractorProtocol{
         fetchPlaceList(searchText: searchText)
     }
     
-    
     func selectPlace(at index: Int) {
         let place = places[index]
         delegate?.handleOutput(.showPlaceDetail(place))
@@ -30,20 +29,17 @@ final class PlaceListInteractor : PlaceListInteractorProtocol{
     
     func fetchPlaceList(searchText: String){
         delegate?.handleOutput(.setLoading(true))
-        service.getPlaceList(searchText :searchText){ [weak self] result in
-            guard let self = self else { return }
+        
+        service.getPlaceList(searchText: searchText)
+            .done { (search) in
+                self.delegate?.handleOutput(.setLoading(false))
+                if let search = search{
+                    self.places = search.results ?? []
+                    self.delegate?.handleOutput(.showPlaceList(search))
+                }
+        }.catch { (error) in
             self.delegate?.handleOutput(.setLoading(false))
-            switch result {
-            case .success(let placeList):
-                self.places = placeList.results ?? []
-                self.delegate?.handleOutput(.showPlaceList(placeList))
-            case .failure(let error):
-                print(error)
-            case .none:
-                print("fail")
-            }
+            self.delegate?.handleOutput(.showError(error))
         }
     }
-    
-    
 }

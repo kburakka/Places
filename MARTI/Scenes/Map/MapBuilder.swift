@@ -13,7 +13,8 @@ final class MapBuilder {
     static func make(with place: Place) -> MapViewController {
         let storyboard = UIStoryboard(name: "Map", bundle: nil)
         let view = storyboard.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
-        let presenter = MapPresenter(view: view, place: place)
+        let router = MapRouter(view: view)
+        let presenter = MapPresenter(view: view, place: place, router: router)
         view.presenter = presenter
         return view
     }

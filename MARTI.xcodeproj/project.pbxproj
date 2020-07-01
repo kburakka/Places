@@ -40,7 +40,27 @@
 		674B5A6424AC790700F1E4F9 /* MapPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A6324AC790700F1E4F9 /* MapPresenter.swift */; };
 		674B5A6624AC792300F1E4F9 /* MapRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A6524AC792300F1E4F9 /* MapRouter.swift */; };
 		674B5A6A24AC794B00F1E4F9 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 674B5A6924AC794B00F1E4F9 /* Map.storyboard */; };
+		674B5A7224ACA01E00F1E4F9 /* MARTITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A7124ACA01E00F1E4F9 /* MARTITests.swift */; };
+		674B5A7A24ACA37C00F1E4F9 /* SearchPlaceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A7924ACA37C00F1E4F9 /* SearchPlaceResponse.swift */; };
+		674B5A7C24ACA4C000F1E4F9 /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A7B24ACA4C000F1E4F9 /* ResourceLoader.swift */; };
+		674B5A7F24ACB2B600F1E4F9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A7E24ACB2B600F1E4F9 /* LoadingView.swift */; };
+		674B5A8124ACC43200F1E4F9 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A8024ACC43200F1E4F9 /* UIViewController.swift */; };
+		674B5A8624ACD19400F1E4F9 /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A8424ACD19400F1E4F9 /* DetailTableViewCell.swift */; };
+		674B5A8724ACD19400F1E4F9 /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 674B5A8524ACD19400F1E4F9 /* DetailTableViewCell.xib */; };
+		674B5A8924ACD1E900F1E4F9 /* KeyValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A8824ACD1E900F1E4F9 /* KeyValue.swift */; };
+		674B5A8D24ACDA7200F1E4F9 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A8C24ACDA7200F1E4F9 /* Helper.swift */; };
+		674B5A8F24AD08DE00F1E4F9 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674B5A8E24AD08DE00F1E4F9 /* Photos.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		674B5A7424ACA01E00F1E4F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 67301DAD24AB45730059E606 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 67301DB424AB45730059E606;
+			remoteInfo = MARTI;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		40994A64FDE8DBE280ACABB8 /* Pods-MARTI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTI.debug.xcconfig"; path = "Target Support Files/Pods-MARTI/Pods-MARTI.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,6 +98,18 @@
 		674B5A6324AC790700F1E4F9 /* MapPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPresenter.swift; sourceTree = "<group>"; };
 		674B5A6524AC792300F1E4F9 /* MapRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouter.swift; sourceTree = "<group>"; };
 		674B5A6924AC794B00F1E4F9 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		674B5A6F24ACA01E00F1E4F9 /* MARTITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MARTITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		674B5A7124ACA01E00F1E4F9 /* MARTITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MARTITests.swift; sourceTree = "<group>"; };
+		674B5A7324ACA01E00F1E4F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		674B5A7924ACA37C00F1E4F9 /* SearchPlaceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlaceResponse.swift; sourceTree = "<group>"; };
+		674B5A7B24ACA4C000F1E4F9 /* ResourceLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceLoader.swift; sourceTree = "<group>"; };
+		674B5A7E24ACB2B600F1E4F9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		674B5A8024ACC43200F1E4F9 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		674B5A8424ACD19400F1E4F9 /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		674B5A8524ACD19400F1E4F9 /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
+		674B5A8824ACD1E900F1E4F9 /* KeyValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValue.swift; sourceTree = "<group>"; };
+		674B5A8C24ACDA7200F1E4F9 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		674B5A8E24AD08DE00F1E4F9 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		862C1C53E3CF65EF2BDFB9FA /* Pods-MARTI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MARTI.release.xcconfig"; path = "Target Support Files/Pods-MARTI/Pods-MARTI.release.xcconfig"; sourceTree = "<group>"; };
 		D9ABD0B0CD50DF376DEB0062 /* Pods_MARTI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MARTI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +120,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6738C55F24ABCEE800B44AEE /* Pods_MARTI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674B5A6C24ACA01E00F1E4F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				67301DB724AB45730059E606 /* MARTI */,
+				674B5A7024ACA01E00F1E4F9 /* MARTITests */,
 				67301DB624AB45730059E606 /* Products */,
 				64235B1DD62901E892964E74 /* Pods */,
 				105C60EE0C0F795E632F5C1B /* Frameworks */,
@@ -125,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				67301DB524AB45730059E606 /* MARTI.app */,
+				674B5A6F24ACA01E00F1E4F9 /* MARTITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +173,7 @@
 		67301DB724AB45730059E606 /* MARTI */ = {
 			isa = PBXGroup;
 			children = (
+				674B5A7D24ACB2A500F1E4F9 /* Utility */,
 				67301DE624AB5E5C0059E606 /* Network */,
 				67301DE324AB579D0059E606 /* Model */,
 				67301DD124AB48220059E606 /* Scenes */,
@@ -194,6 +236,7 @@
 		67301DD424AB48670059E606 /* PlaceDetail */ = {
 			isa = PBXGroup;
 			children = (
+				674B5A8324ACD17900F1E4F9 /* DetailCell */,
 				674B5A5324AC73C200F1E4F9 /* PlaceDetailBuilder.swift */,
 				674B5A5524AC73E300F1E4F9 /* PlaceDetailViewController.swift */,
 				674B5A5724AC73F800F1E4F9 /* PlaceDetailContracts.swift */,
@@ -210,6 +253,8 @@
 				67301DED24AB61700059E606 /* Search.swift */,
 				6738C53324AB6FEC00B44AEE /* Geometry.swift */,
 				6738C53524ABAAA100B44AEE /* Location.swift */,
+				674B5A7924ACA37C00F1E4F9 /* SearchPlaceResponse.swift */,
+				674B5A8E24AD08DE00F1E4F9 /* Photos.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,6 +278,44 @@
 			path = SearchListCell;
 			sourceTree = "<group>";
 		};
+		674B5A7024ACA01E00F1E4F9 /* MARTITests */ = {
+			isa = PBXGroup;
+			children = (
+				674B5A7124ACA01E00F1E4F9 /* MARTITests.swift */,
+				674B5A7324ACA01E00F1E4F9 /* Info.plist */,
+				674B5A7B24ACA4C000F1E4F9 /* ResourceLoader.swift */,
+			);
+			path = MARTITests;
+			sourceTree = "<group>";
+		};
+		674B5A7D24ACB2A500F1E4F9 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				674B5A8224ACC43600F1E4F9 /* Extension */,
+				674B5A7E24ACB2B600F1E4F9 /* LoadingView.swift */,
+				674B5A8824ACD1E900F1E4F9 /* KeyValue.swift */,
+				674B5A8C24ACDA7200F1E4F9 /* Helper.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		674B5A8224ACC43600F1E4F9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				674B5A8024ACC43200F1E4F9 /* UIViewController.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		674B5A8324ACD17900F1E4F9 /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				674B5A8424ACD19400F1E4F9 /* DetailTableViewCell.swift */,
+				674B5A8524ACD19400F1E4F9 /* DetailTableViewCell.xib */,
+			);
+			path = DetailCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,8 +327,8 @@
 				67301DB124AB45730059E606 /* Sources */,
 				67301DB224AB45730059E606 /* Frameworks */,
 				67301DB324AB45730059E606 /* Resources */,
-				30C16969AEFA4AB53237F447 /* [CP] Embed Pods Frameworks */,
 				3522015A0E6995208471D36C /* [CP] Copy Pods Resources */,
+				719838DB9E3B06A3978917A8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +338,24 @@
 			productName = MARTI;
 			productReference = 67301DB524AB45730059E606 /* MARTI.app */;
 			productType = "com.apple.product-type.application";
+		};
+		674B5A6E24ACA01E00F1E4F9 /* MARTITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674B5A7824ACA01E00F1E4F9 /* Build configuration list for PBXNativeTarget "MARTITests" */;
+			buildPhases = (
+				674B5A6B24ACA01E00F1E4F9 /* Sources */,
+				674B5A6C24ACA01E00F1E4F9 /* Frameworks */,
+				674B5A6D24ACA01E00F1E4F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				674B5A7524ACA01E00F1E4F9 /* PBXTargetDependency */,
+			);
+			name = MARTITests;
+			productName = MARTITests;
+			productReference = 674B5A6F24ACA01E00F1E4F9 /* MARTITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -268,6 +369,10 @@
 				TargetAttributes = {
 					67301DB424AB45730059E606 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					674B5A6E24ACA01E00F1E4F9 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 67301DB424AB45730059E606;
 					};
 				};
 			};
@@ -285,6 +390,7 @@
 			projectRoot = "";
 			targets = (
 				67301DB424AB45730059E606 /* MARTI */,
+				674B5A6E24ACA01E00F1E4F9 /* MARTITests */,
 			);
 		};
 /* End PBXProject section */
@@ -299,30 +405,21 @@
 				67301DC524AB45740059E606 /* LaunchScreen.storyboard in Resources */,
 				67301DC224AB45740059E606 /* Assets.xcassets in Resources */,
 				6738C53D24ABB86100B44AEE /* SearchTableViewCell.xib in Resources */,
+				674B5A8724ACD19400F1E4F9 /* DetailTableViewCell.xib in Resources */,
 				674B5A6A24AC794B00F1E4F9 /* Map.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674B5A6D24ACA01E00F1E4F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30C16969AEFA4AB53237F447 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		3522015A0E6995208471D36C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,6 +435,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		719838DB9E3B06A3978917A8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MARTI/Pods-MARTI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E859E89112F7F6CB35FDAB9F /* [CP] Check Pods Manifest.lock */ = {
@@ -369,10 +483,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				674B5A8124ACC43200F1E4F9 /* UIViewController.swift in Sources */,
+				674B5A8924ACD1E900F1E4F9 /* KeyValue.swift in Sources */,
 				6738C53424AB6FEC00B44AEE /* Geometry.swift in Sources */,
 				67301DE124AB49460059E606 /* PlaceListContracts.swift in Sources */,
 				674B5A5624AC73E300F1E4F9 /* PlaceDetailViewController.swift in Sources */,
 				67301DDC24AB48D20059E606 /* PlaceListPresenter.swift in Sources */,
+				674B5A7A24ACA37C00F1E4F9 /* SearchPlaceResponse.swift in Sources */,
+				674B5A8D24ACDA7200F1E4F9 /* Helper.swift in Sources */,
+				674B5A7F24ACB2B600F1E4F9 /* LoadingView.swift in Sources */,
 				6738C53624ABAAA100B44AEE /* Location.swift in Sources */,
 				67301DE524AB57DE0059E606 /* Place.swift in Sources */,
 				67301DCE24AB47BD0059E606 /* AppContainer.swift in Sources */,
@@ -384,6 +503,7 @@
 				674B5A5E24AC78D200F1E4F9 /* MapBuilder.swift in Sources */,
 				674B5A6624AC792300F1E4F9 /* MapRouter.swift in Sources */,
 				674B5A6224AC78FC00F1E4F9 /* MapContracts.swift in Sources */,
+				674B5A8624ACD19400F1E4F9 /* DetailTableViewCell.swift in Sources */,
 				67301DDA24AB48C50059E606 /* PlaceListRouter.swift in Sources */,
 				6738C53C24ABB86100B44AEE /* SearchTableViewCell.swift in Sources */,
 				67301DB924AB45730059E606 /* AppDelegate.swift in Sources */,
@@ -394,11 +514,29 @@
 				67301DE824AB5EEA0059E606 /* APIClient.swift in Sources */,
 				67301DD824AB48B40059E606 /* PlaceListInteractor.swift in Sources */,
 				674B5A5824AC73F800F1E4F9 /* PlaceDetailContracts.swift in Sources */,
+				674B5A8F24AD08DE00F1E4F9 /* Photos.swift in Sources */,
 				67301DD624AB489F0059E606 /* PlaceListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		674B5A6B24ACA01E00F1E4F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				674B5A7C24ACA4C000F1E4F9 /* ResourceLoader.swift in Sources */,
+				674B5A7224ACA01E00F1E4F9 /* MARTITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		674B5A7524ACA01E00F1E4F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 67301DB424AB45730059E606 /* MARTI */;
+			targetProxy = 674B5A7424ACA01E00F1E4F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		67301DC324AB45740059E606 /* LaunchScreen.storyboard */ = {
@@ -564,6 +702,46 @@
 			};
 			name = Release;
 		};
+		674B5A7624ACA01E00F1E4F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UJ425XN7W;
+				INFOPLIST_FILE = MARTITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "burak-kaya.MARTITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARTI.app/MARTI";
+			};
+			name = Debug;
+		};
+		674B5A7724ACA01E00F1E4F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7UJ425XN7W;
+				INFOPLIST_FILE = MARTITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "burak-kaya.MARTITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MARTI.app/MARTI";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -581,6 +759,15 @@
 			buildConfigurations = (
 				67301DCA24AB45740059E606 /* Debug */,
 				67301DCB24AB45740059E606 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674B5A7824ACA01E00F1E4F9 /* Build configuration list for PBXNativeTarget "MARTITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				674B5A7624ACA01E00F1E4F9 /* Debug */,
+				674B5A7724ACA01E00F1E4F9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

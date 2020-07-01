@@ -6,8 +6,10 @@ target 'MARTI' do
   use_frameworks!
 
   # Pods for MARTI
-pod 'Alamofire', '~> 5.2'
+  pod 'Alamofire', '~> 4.9.1'
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+  pod 'SDWebImage', :modular_headers => true
+  pod "PromiseKit", "~> 6.8"
 
 end

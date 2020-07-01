@@ -8,20 +8,24 @@
 
 import Foundation
 
-final class Location: NSObject,Decodable {
+public struct Location: Decodable, Equatable {
     
-    let lat: Double?
-    let lng: Double?
+    public let lat: Double?
+    public let lng: Double?
 
-    
-    init(lat: Double, lng: Double) {
-        self.lat = lat
-        self.lng = lng
-        super.init()
+    public enum CodingKeys: String, CodingKey {
+                    case lat
+                    case lng
     }
     
-    override func isEqual(_ object: Any?) -> Bool {
-        guard let other = object as? Location else { return false }
-        return self.lat == other.lat && self.lng == other.lng
-    }
+//    init(lat: Double, lng: Double) {
+//        self.lat = lat
+//        self.lng = lng
+//        super.init()
+//    }
+//    
+//    override func isEqual(_ object: Any?) -> Bool {
+//        guard let other = object as? Location else { return false }
+//        return self.lat == other.lat && self.lng == other.lng
+//    }
 }

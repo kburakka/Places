@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 // MARK: - Interactor
 protocol PlaceListInteractorProtocol: class {
@@ -19,6 +20,7 @@ enum PlaceListInteractorOutput {
     case setLoading(Bool)
     case showPlaceList(Search)
     case showPlaceDetail(Place)
+    case showError(Error)
 }
 
 protocol PlaceListInteractorDelegate: class {
@@ -32,10 +34,11 @@ protocol PlaceListPresenterProtocol: class {
     func searchPlace(searchText: String)
 }
 
-enum PlaceListPresenterOutput: Equatable {
-    case updateTitle(String)
+enum PlaceListPresenterOutput {
+//    case updateTitle(String)
     case setLoading(Bool)
     case showPlaceList(Search)
+    case showError(Error)
 }
 
 
@@ -46,7 +49,7 @@ protocol PlaceListViewProtocol: class {
 
 
 // MARK: - Router
-enum PlaceListRoute {
+enum PlaceListRoute : Equatable{
     case showOnMap(Place)
 }
 

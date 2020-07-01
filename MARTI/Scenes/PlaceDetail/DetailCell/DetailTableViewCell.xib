@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="68" id="ke0-6z-sn9" customClass="DetailTableViewCell" customModule="MARTI" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ke0-6z-sn9" id="NM8-pz-sdh">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGF-C7-kku">
+                        <rect key="frame" x="16" y="10" width="288" height="29.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ajv-af-ljc">
+                        <rect key="frame" x="16" y="44.5" width="288" height="20.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MGF-C7-kku" firstAttribute="leading" secondItem="NM8-pz-sdh" secondAttribute="leading" constant="16" id="BxQ-V1-GUo"/>
+                    <constraint firstItem="MGF-C7-kku" firstAttribute="top" secondItem="NM8-pz-sdh" secondAttribute="top" constant="10" id="Cht-6y-GrV"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ajv-af-ljc" secondAttribute="bottom" constant="3" id="CzO-qZ-fWc"/>
+                    <constraint firstAttribute="trailing" secondItem="MGF-C7-kku" secondAttribute="trailing" constant="16" id="HO2-wM-7TC"/>
+                    <constraint firstItem="Ajv-af-ljc" firstAttribute="top" secondItem="MGF-C7-kku" secondAttribute="bottom" constant="5" id="lI9-Ox-Yf7"/>
+                    <constraint firstItem="Ajv-af-ljc" firstAttribute="leading" secondItem="NM8-pz-sdh" secondAttribute="leading" constant="16" id="raV-6F-jFi"/>
+                    <constraint firstAttribute="trailing" secondItem="Ajv-af-ljc" secondAttribute="trailing" constant="16" id="zAy-is-Hlg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="qK4-Hs-hhh"/>
+            <connections>
+                <outlet property="descLabel" destination="Ajv-af-ljc" id="JJF-hD-f7Y"/>
+                <outlet property="titleLabel" destination="MGF-C7-kku" id="JGf-sP-tWA"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="185"/>
+        </tableViewCell>
+    </objects>
+</document>

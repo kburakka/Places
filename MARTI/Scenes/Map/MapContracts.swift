@@ -10,8 +10,19 @@ import Foundation
 
 protocol MapPresenterProtocol {
     func load()
+    func selectMarker(place : Place)
 }
 
 protocol MapViewProtocol: class {
     func addMarker(_ presentation: Place)
+}
+
+
+// MARK: - Router
+enum MapRoute : Equatable{
+    case showDetail(Place)
+}
+
+protocol MapRouterProtocol: class {
+    func navigate(to route: MapRoute)
 }
