@@ -11,7 +11,7 @@ import SDWebImage
 
 class SearchTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var rating: UILabel!
+    @IBOutlet weak var adress: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var icon: UIImageView!
     
@@ -28,9 +28,7 @@ class SearchTableViewCell: UITableViewCell {
     
     func configure(place : Place){
         name.text = place.name
-        if let ratingTxt = place.Rating{
-            rating.text = "\(ratingTxt)"
-        }
+        adress.text = place.Adress
 
         if let iconUrl = place.icon{
             let url = URL(string: iconUrl)

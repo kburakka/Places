@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import PromiseKit
 
 final class PlaceListInteractor : PlaceListInteractorProtocol{
     
@@ -23,22 +24,23 @@ final class PlaceListInteractor : PlaceListInteractorProtocol{
     }
     
     func selectPlace(at index: Int) {
-        let place = places[index]
-        delegate?.handleOutput(.showPlaceDetail(place))
+        if places.count > index{
+            let place = places[index]
+            delegate?.handleOutput(.showPlaceDetail(place))
+        }
     }
     
     func fetchPlaceList(searchText: String){
         delegate?.handleOutput(.setLoading(true))
         
-        service.getPlaceList(searchText: searchText)
-            .done { (search) in
-                self.delegate?.handleOutput(.setLoading(false))
-                if let search = search{
-                    self.places = search.results ?? []
-                    self.delegate?.handleOutput(.showPlaceList(search))
-                }
-        }.catch { (error) in
+        firstly{
+            service.getPlaceList(searchText: searchText)
+        }.ensure {
             self.delegate?.handleOutput(.setLoading(false))
+        }.map { (search) in
+            self.delegate?.handleOutput(.showPlaceList(search))
+            self.places = search.results ?? []
+        }.catch { (error) in
             self.delegate?.handleOutput(.showError(error))
         }
     }

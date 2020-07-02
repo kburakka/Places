@@ -19,7 +19,7 @@ protocol MapViewProtocol: class {
 
 
 // MARK: - Router
-enum MapRoute : Equatable{
+enum MapRoute{
     case showDetail(Place)
 }
 

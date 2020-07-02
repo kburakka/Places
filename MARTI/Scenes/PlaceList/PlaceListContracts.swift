@@ -35,7 +35,6 @@ protocol PlaceListPresenterProtocol: class {
 }
 
 enum PlaceListPresenterOutput {
-//    case updateTitle(String)
     case setLoading(Bool)
     case showPlaceList(Search)
     case showError(Error)
@@ -49,7 +48,7 @@ protocol PlaceListViewProtocol: class {
 
 
 // MARK: - Router
-enum PlaceListRoute : Equatable{
+enum PlaceListRoute{
     case showOnMap(Place)
 }
 

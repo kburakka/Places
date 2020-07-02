@@ -10,38 +10,36 @@ import UIKit
 import SDWebImage
 
 class PlaceDetailViewController: UIViewController, PlaceDetailViewProtocol {
-
+    
     var presenter: PlaceDetailPresenterProtocol!
-
+    
     @IBOutlet weak var photo: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var icon: UIImageView!
     var mirror : Mirror?
     var cellsToShow = [KeyValue]()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.load()
     }
- 
+    
     func setDetail(_ place: Place) {
-        
         name.text = place.name
-        if let photos = place.photos{
-            if photos.count > 0{
-                if let photo_reference = photos[0].photo_reference{
-                    let urlString = ProductionServer.photoUrl + "&photoreference=\(photo_reference)"
-                    let url = URL(string: urlString)
-                    photo?.sd_setImage(with: url, placeholderImage: UIImage(named: "marti"), options: SDWebImageOptions.highPriority, context: nil)
-                }
-            }
+        if let photos = place.photos,photos.count > 0,let photo_reference = photos[0].photo_reference{
+            let urlString = ProductionServer.photoUrl + "&photoreference=\(photo_reference)"
+            let url = URL(string: urlString)
+            photo?.sd_setImage(with: url, placeholderImage: UIImage(named: "marti"), options: SDWebImageOptions.highPriority, context: nil)
+        }else{
+            photo.image = UIImage(named: "marti")
         }
         
         if let iconUrl = place.icon{
             let url = URL(string: iconUrl)
             icon?.sd_setImage(with: url, placeholderImage: UIImage(named: "marti"), options: SDWebImageOptions.highPriority, context: nil)
         }
+        
         mirror = Mirror(reflecting: place)
         if let children = mirror?.children{
             for child in children {

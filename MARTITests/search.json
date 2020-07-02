@@ -1,0 +1,106 @@
+{
+  "html_attributions": [
+    
+  ],
+  "results": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Sultan Ahmet, Ayasofya Meydanı No:1, 34122 Fatih/İstanbul, Turkey",
+      "geometry": {
+        "location": {
+          "lat": 41.008583,
+          "lng": 28.980175
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.00955292989273,
+            "lng": 28.98089352989273
+          },
+          "southwest": {
+            "lat": 41.00685327010729,
+            "lng": 28.97819387010729
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/museum-71.png",
+      "id": "27aafedda22667c6421648a281189a888fcc47b4",
+      "name": "Hagia Sophia Museum",
+      "opening_hours": {
+        "open_now": false
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114411208126953807978\">Wolfgang Unglaub</a>"
+          ],
+          "photo_reference": "CmRaAAAAfMq56BtMIxtp-hxdwNLQdPhZLPekKCOenRxh1qs6_mu2DxDoPNvRqvMee8t2cY9l2nVh8T61m9bHdTNhDpxulgHqnh_0EKw7p3PD534hhRQYLNSUpTpmBE5PqPzynAPgEhBVwnETQ6mlVGWX0VdNAD4rGhSY16Znz-HQkNOi8BAFVbt0krSNmA",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJJxwBkr65yhQRrk9EN29vbiM",
+      "plus_code": {
+        "compound_code": "2X5J+C3 Sultan Ahmet, Fatih/İstanbul",
+        "global_code": "8GHC2X5J+C3"
+      },
+      "rating": 4.7,
+      "reference": "ChIJJxwBkr65yhQRrk9EN29vbiM",
+      "types": [
+        "museum",
+        "tourist_attraction",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 61600
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Küçük Ayasofya Mahallesi, Küçük Ayasofya Camii Sokagi No:20, 34122 Fatih/İstanbul, Turkey",
+      "geometry": {
+        "location": {
+          "lat": 41.0027259,
+          "lng": 28.9722002
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 41.00427797989272,
+            "lng": 28.97352682989272
+          },
+          "southwest": {
+            "lat": 41.00157832010728,
+            "lng": 28.97082717010727
+          }
+        }
+      },
+      "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/worship_islam-71.png",
+      "id": "28166882bf5844d94a77fff26ebfa7ee31d7bef0",
+      "name": "Little Hagia Sophia",
+      "photos": [
+        {
+          "height": 3464,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117792026470317770446\">Angel Saiz</a>"
+          ],
+          "photo_reference": "CmRaAAAAKrODpryMGQVrH9DnTdopwLGbgi74GRPw1ZmNI0_Gpb7EigY_mSWxhnxAjU2B0EDcgFi45RJzUzUlNBbO6vUra0gIOo0rI3cRtYLEswsDQR4U2McoJP8qLVpCx3MI1ax6EhDd4OdP72sHNk-jBpL424wNGhRBxhBiq4-RKiNQFtkee0GJjm_Qdw",
+          "width": 4618
+        }
+      ],
+      "place_id": "ChIJGfxyyJm5yhQRwZ1k9Z0lPuM",
+      "plus_code": {
+        "compound_code": "2X3C+3V European Side, İstanbul",
+        "global_code": "8GHC2X3C+3V"
+      },
+      "rating": 4.7,
+      "reference": "ChIJGfxyyJm5yhQRwZ1k9Z0lPuM",
+      "types": [
+        "mosque",
+        "tourist_attraction",
+        "place_of_worship",
+        "point_of_interest",
+        "establishment"
+      ],
+      "user_ratings_total": 2713
+    }
+  ],
+  "status": "OK"
+}

@@ -22,17 +22,17 @@
                             <constraint firstAttribute="width" constant="55" id="eJ8-67-h9J"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-jZ-EZP">
-                        <rect key="frame" x="91" y="4" width="209" height="45"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9bh-jZ-EZP">
+                        <rect key="frame" x="91" y="4" width="209" height="39"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="45" id="yP5-Jw-0Zy"/>
+                            <constraint firstAttribute="height" constant="39" id="yP5-Jw-0Zy"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rating" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-Al-3s9">
-                        <rect key="frame" x="91" y="49" width="209" height="16.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgh-Al-3s9">
+                        <rect key="frame" x="91" y="43" width="209" height="0.0"/>
                         <fontDescription key="fontDescription" name="Helvetica-LightOblique" family="Helvetica" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -52,9 +52,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="hwG-Vt-Axx"/>
             <connections>
+                <outlet property="adress" destination="lgh-Al-3s9" id="ms9-Ee-2H3"/>
                 <outlet property="icon" destination="K6m-H6-BMC" id="vJa-Tu-fQX"/>
                 <outlet property="name" destination="9bh-jZ-EZP" id="ia8-OU-eUY"/>
-                <outlet property="rating" destination="lgh-Al-3s9" id="ms9-Ee-2H3"/>
             </connections>
             <point key="canvasLocation" x="81" y="15"/>
         </tableViewCell>

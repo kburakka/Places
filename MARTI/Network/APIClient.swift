@@ -10,7 +10,7 @@ import Alamofire
 import PromiseKit
 
 public protocol APIClientProtocol {
-    func getPlaceList(searchText : String)-> Promise<Search?>
+    func getPlaceList(searchText : String)-> Promise<Search>
 }
 
 class APIClient: APIClientProtocol {    
@@ -19,7 +19,7 @@ class APIClient: APIClientProtocol {
         case networkError(internal: Swift.Error)
     }
   
-    private func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder()) -> Promise<T?>{
+    public static func performRequest<T:Decodable>(route:APIRouter, decoder: JSONDecoder = JSONDecoder()) -> Promise<T>{
         return Promise(){ resolver in
             Alamofire.request(route).responseData { (response) in
                 switch response.result{
@@ -37,7 +37,7 @@ class APIClient: APIClientProtocol {
         }
     }
     
-    func getPlaceList(searchText : String)-> Promise<Search?>{
-       return performRequest(route: APIRouter.search(text: searchText))
+    func getPlaceList(searchText : String)-> Promise<Search>{
+        return APIClient.performRequest(route: APIRouter.search(text: searchText))
     }
 }

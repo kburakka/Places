@@ -1,0 +1,6 @@
+module Pods_MARTITests {
+  umbrella header "Pods-MARTITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
